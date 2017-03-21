@@ -29,8 +29,9 @@ public class  App {
       String breed = request.queryParams("breed");
       String age = request.queryParams("age");
       String bio = request.queryParams("bio");
+      String imgDirectory = request.queryParams("img_path");
 
-      Pupper newPupper = new Pupper(name, breed, age, bio);
+      Pupper newPupper = new Pupper(name, breed, age, bio, imgDirectory);
       puppersArrayList.add(newPupper);
 
       model.put("puppersList", request.session().attribute("puppersList"));

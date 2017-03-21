@@ -4,12 +4,14 @@ public class Pupper {
   private String mBreed;
   private String mAge;
   private String mBio;
+  private String mImgDirectory;
 
-  public Pupper(String name, String breed, String age, String bio) {
+  public Pupper(String name, String breed, String age, String bio, String directory) {
     mName = name;
     mBreed = breed;
     mAge = age;
     mBio = bio;
+    mImgDirectory = directory;
   }
 
   public String getName() {
@@ -26,5 +28,9 @@ public class Pupper {
 
   public String getBio() {
     return mBio;
+  }
+
+  public String getImgDirectory() {
+    return mImgDirectory;
   }
 }
