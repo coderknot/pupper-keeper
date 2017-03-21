@@ -1,0 +1,18 @@
+<!--pupper-list.vtl-->
+
+#if($puppersList)
+
+<h1>You have entered a new pupper!</h1>
+
+  #foreach($pupper in $puppersList)
+    <p>$pupper.getName()</p>
+    <p>$pupper.getBreed()</p>
+    <p>$pupper.getAge()</p>
+    <p>$pupper.getBio()</p>
+  #end
+#else
+  <p>No puppers!</p>
+#end
+
+<a href="/">Go back to pupper creation.</a>
+<!--pupper-list.vtl-->
