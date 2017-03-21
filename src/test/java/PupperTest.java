@@ -26,4 +26,10 @@ public class PupperTest {
     Pupper testPupper = new Pupper("Tyson","Pit Mix", 9,"Tyson enjoys taking long naps and eating treats by the window.");
     assertEquals(9, testPupper.getAge());
   }
+
+  @Test
+  public void getBio_getsPupperBio_BioString() {
+    Pupper testPupper = new Pupper("Tyson","Pit Mix", 9,"Tyson enjoys taking long naps and eating treats by the window.");
+    assertEquals("Tyson enjoys taking long naps and eating treats by the window.", testPupper.getBio());
+  }
 }
